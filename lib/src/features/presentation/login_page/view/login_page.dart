@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter/services.dart';
 import 'package:reservapp/src/colors/colors.dart';
-import 'package:reservapp/src/widgets/back_button.dart';
+import 'package:reservapp/src/features/presentation/commons_widgets/back_button.dart';
+import 'package:reservapp/src/features/presentation/commons_widgets/header_text.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -40,11 +41,8 @@ class LoginPage extends StatelessWidget {
                     child: Center(
                       child: Column(
                         children: [
-                          Text("Bienvenido",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 30.0)),
+                          headerText(
+                              "Bienvenido", Colors.white, FontWeight.bold, 30.0)
                         ],
                       ),
                     ),
@@ -150,7 +148,7 @@ Widget _loginButton(BuildContext context) {
     child: RaisedButton(
       onPressed: () {
         // Navigate to the second screen using a named route.
-        Navigator.pushNamed(context, '/login');
+        Navigator.pushNamed(context, '/tabs');
       },
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       color: Theme.of(context).accentColor,

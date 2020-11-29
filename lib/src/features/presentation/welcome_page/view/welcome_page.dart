@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:reservapp/src/routes/routes.dart';
+import 'package:reservapp/src/features/presentation/commons_widgets/header_text.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -27,15 +27,9 @@ class WelcomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 50.0),
-              child: Text(
-                'HACE TU RESERVA EN TU LUGAR FAVORITO',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 45.0),
-              ),
-            ),
+                padding: EdgeInsets.symmetric(horizontal: 50.0),
+                child: headerText('HACE TU RESERVA EN TU LUGAR FAVORITO',
+                    Colors.white, FontWeight.bold, 45.0)),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 50.0, vertical: 30.0),
               child: Text(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:reservapp/src/widgets/back_button.dart';
+import 'package:reservapp/src/features/presentation/commons_widgets/back_button.dart';
+import 'package:reservapp/src/features/presentation/commons_widgets/header_text.dart';
 
 class ForgotPasswordPage extends StatelessWidget {
   @override
@@ -19,11 +20,8 @@ class ForgotPasswordPage extends StatelessWidget {
             padding: EdgeInsets.all(30.0),
             child: Column(
               children: [
-                Text("Olvidé mi contraseña",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 30.0)),
+                headerText("Olvidé mi contraseña", Colors.black,
+                    FontWeight.bold, 30.0),
                 Container(
                   padding: EdgeInsets.all(10.0),
                   child: Text(
@@ -94,15 +92,9 @@ void _showAlert(BuildContext context) {
                   height: 130,
                 ),
                 Container(
-                  margin: EdgeInsets.all(15.0),
-                  child: Text(
-                    'Tu contraseña ha sido restablecida',
-                    style: TextStyle(
-                        color: Theme.of(context).primaryColor,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20.0),
-                  ),
-                ),
+                    margin: EdgeInsets.all(15.0),
+                    child: headerText('Tu contraseña ha sido restablecida',
+                        Theme.of(context).primaryColor, FontWeight.bold, 20.0)),
                 Container(
                   margin: EdgeInsets.all(10.0),
                   child: Text(

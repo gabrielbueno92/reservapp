@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:reservapp/src/colors/colors.dart';
-import 'package:reservapp/src/widgets/back_button.dart';
+import 'package:reservapp/src/features/presentation/commons_widgets/back_button.dart';
+import 'package:reservapp/src/features/presentation/commons_widgets/header_text.dart';
 
 class SignUpPage extends StatelessWidget {
   @override
@@ -20,11 +20,7 @@ class SignUpPage extends StatelessWidget {
           padding: EdgeInsets.all(30.0),
           child: Column(
             children: [
-              Text("Crear cuenta",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30.0)),
+              headerText("Crear cuenta", Colors.black, FontWeight.bold, 30.0),
               _userNameInput(context),
               _emailInput(context),
               _phoneInput(context),

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:reservapp/src/pages/forgot_password_page.dart';
-import 'package:reservapp/src/pages/login_page.dart';
-import 'package:reservapp/src/pages/sign_up_page.dart';
-import 'package:reservapp/src/pages/welcome_page.dart';
+
+import 'package:reservapp/src/features/presentation/forgot_password_page/view/forgot_password_page.dart';
+import 'package:reservapp/src/features/presentation/login_page/view/login_page.dart';
+import 'package:reservapp/src/features/presentation/sign_up_page/view/sign_up_page.dart';
+import 'package:reservapp/src/features/presentation/welcome_page/view/welcome_page.dart';
+import 'package:reservapp/src/features/presentation/tabs/tabs_page.dart';
 
 //routes
 
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => WelcomePage(),
         '/login': (context) => LoginPage(),
         '/forgot-password': (context) => ForgotPasswordPage(),
-        '/sign-up': (context) => SignUpPage()
+        '/sign-up': (context) => SignUpPage(),
+        '/tabs': (context) => TabsPages()
       },
       theme: ThemeData(
           accentColor: Color.fromRGBO(229, 46, 46, 1.0),

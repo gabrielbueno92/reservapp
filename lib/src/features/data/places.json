@@ -1,0 +1,91 @@
+{
+    "places": [
+        {
+            "id": 1,
+            "place_name": "Temple Bar",
+            "registration_date": "2019-06-17 00:00:00",
+            "responsable": {
+                "first_name": "Juan",
+                "last_name": "Gonzalez",
+                "email": "juangonzalez@templebar.com.ar",
+                "phone": "3513123456",
+                "identification": {
+                    "number": "36123456",
+                    "type": "DNI"
+                }
+            },
+            "address": {
+                "address": "Belgrano 1145",
+                "city": "Cordoba",
+                "country": "Argentina",
+                "postal_code": "5000"
+            },
+            "ratings": {
+                "one_star": 0,
+                "two_stars": 0,
+                "three_stars": 0,
+                "four_stars": 0,
+                "five_stars": 0,
+                "total": 0
+            }
+        },
+        {
+            "id": 2,
+            "place_name": "Antares Bar",
+            "registration_date": "2019-06-10 00:00:00",
+            "responsable": {
+                "first_name": "Florencia",
+                "last_name": "Diaz",
+                "email": "flordiazm@antares.com.ar",
+                "phone": "3513123123",
+                "identification": {
+                    "number": "36190956",
+                    "type": "DNI"
+                }
+            },
+            "address": {
+                "address": "San Loreanzo 415",
+                "city": "Cordoba",
+                "country": "Argentina",
+                "postal_code": "5000"
+            },
+            "ratings": {
+                "one_star": 0,
+                "two_stars": 0,
+                "three_stars": 0,
+                "four_stars": 0,
+                "five_stars": 0,
+                "total": 0
+            }
+        },
+        {
+            "id": 3,
+            "place_name": "La farola resto",
+            "registration_date": "2020-01-03 00:00:00",
+            "responsable": {
+                "first_name": "Alberto",
+                "last_name": "Rubio",
+                "email": "albertorubio@lafarola.com.ar",
+                "phone": "3515991823",
+                "identification": {
+                    "number": "24590946",
+                    "type": "DNI"
+                }
+            },
+            "address": {
+                "address": "Rafael Nuñez 6233",
+                "city": "Cordoba",
+                "country": "Argentina",
+                "postal_code": "5000"
+            },
+            "ratings": {
+                "one_star": 0,
+                "two_stars": 0,
+                "three_stars": 0,
+                "four_stars": 0,
+                "five_stars": 0,
+                "total": 0
+            }
+        }
+    ]
+}
