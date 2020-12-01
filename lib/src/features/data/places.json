@@ -3,6 +3,7 @@
         {
             "id": 1,
             "place_name": "Temple Bar",
+            "photo": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1567&q=80",
             "registration_date": "2019-06-17 00:00:00",
             "responsable": {
                 "first_name": "Juan",
@@ -14,24 +15,20 @@
                     "type": "DNI"
                 }
             },
-            "address": {
-                "address": "Belgrano 1145",
-                "city": "Cordoba",
-                "country": "Argentina",
-                "postal_code": "5000"
-            },
+            "address": "Belgrano 1145",
             "ratings": {
                 "one_star": 0,
                 "two_stars": 0,
                 "three_stars": 0,
                 "four_stars": 0,
-                "five_stars": 0,
-                "total": 0
-            }
+                "five_stars": 0
+            },
+            "total_ratings": 610
         },
         {
             "id": 2,
             "place_name": "Antares Bar",
+            "photo": "https://images.unsplash.com/photo-1531527122496-151cfb74bda5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1567&q=80",
             "registration_date": "2019-06-10 00:00:00",
             "responsable": {
                 "first_name": "Florencia",
@@ -43,24 +40,20 @@
                     "type": "DNI"
                 }
             },
-            "address": {
-                "address": "San Loreanzo 415",
-                "city": "Cordoba",
-                "country": "Argentina",
-                "postal_code": "5000"
-            },
+            "address": "San Lorenzo 415",
             "ratings": {
                 "one_star": 0,
                 "two_stars": 0,
                 "three_stars": 0,
                 "four_stars": 0,
-                "five_stars": 0,
-                "total": 0
-            }
+                "five_stars": 0
+            },
+            "total_ratings": 397
         },
         {
             "id": 3,
-            "place_name": "La farola resto",
+            "place_name": "Galpon resto",
+            "photo": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1567&q=80",
             "registration_date": "2020-01-03 00:00:00",
             "responsable": {
                 "first_name": "Alberto",
@@ -72,20 +65,15 @@
                     "type": "DNI"
                 }
             },
-            "address": {
-                "address": "Rafael Nuñez 6233",
-                "city": "Cordoba",
-                "country": "Argentina",
-                "postal_code": "5000"
-            },
+            "address": "Rafael Nuñez 6233",
             "ratings": {
                 "one_star": 0,
                 "two_stars": 0,
                 "three_stars": 0,
                 "four_stars": 0,
-                "five_stars": 0,
-                "total": 0
-            }
+                "five_stars": 0
+            },
+            "total_ratings": 166
         }
     ]
 }
