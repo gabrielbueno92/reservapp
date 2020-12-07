@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "46431753394",
+    "project_id": "reservapp-flutter",
+    "storage_bucket": "reservapp-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46431753394:android:c792a25a1727c4fc2865ab",
+        "android_client_info": {
+          "package_name": "com.reservapp.seminarioanalista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46431753394-1tcnahrqafapolmmqvm01cb5un3uvhar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.reservapp.seminarioanalista",
+            "certificate_hash": "7e1d7631dfe0aa7c7184c41d9fa3bd848309e836"
+          }
+        },
+        {
+          "client_id": "46431753394-4mhsoqpkdj6k6voegorlhd3a1vhhj5fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8xSSBrzOQ0zRxYbmr6dqJ0nvkdpI6xj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46431753394-4mhsoqpkdj6k6voegorlhd3a1vhhj5fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -13,7 +13,9 @@ List<Widget> placesList(BuildContext context, List<dynamic> places) {
 Widget _scrollViewPlaces(BuildContext context, Map<String, dynamic> place) {
   return Column(children: <Widget>[
     GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushNamed(context, '/place', arguments: place);
+        },
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20.0),
           child: Image(
@@ -100,7 +102,7 @@ Widget _scrollViewPlaces(BuildContext context, Map<String, dynamic> place) {
                   ])),
             ),
             Container(
-              margin: EdgeInsets.only(left: 75.0, top: 2.0),
+              margin: EdgeInsets.only(left: 65.0, top: 2.0),
               child: SizedBox(
                   width: 100.0,
                   height: 20.0,

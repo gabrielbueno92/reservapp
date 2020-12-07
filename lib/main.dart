@@ -1,19 +1,35 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'package:reservapp/src/features/presentation/forgot_password_page/view/forgot_password_page.dart';
 import 'package:reservapp/src/features/presentation/login_page/view/login_page.dart';
+import 'package:reservapp/src/features/presentation/place_page/view/place_page.dart';
 import 'package:reservapp/src/features/presentation/sign_up_page/view/sign_up_page.dart';
 import 'package:reservapp/src/features/presentation/welcome_page/view/welcome_page.dart';
 import 'package:reservapp/src/features/presentation/tabs/tabs_page.dart';
 
 //routes
 
-void main() => runApp(MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: [
+        // ... delegado[s] de localización específicos de la app aquí
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en'), // Inglés
+        const Locale('es'), // Español
+      ],
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
@@ -21,7 +37,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => LoginPage(),
         '/forgot-password': (context) => ForgotPasswordPage(),
         '/sign-up': (context) => SignUpPage(),
-        '/tabs': (context) => TabsPages()
+        '/tabs': (context) => TabsPages(),
+        '/place': (context) => PlacePage()
       },
       theme: ThemeData(
           accentColor: Color.fromRGBO(229, 46, 46, 1.0),
