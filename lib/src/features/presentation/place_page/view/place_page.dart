@@ -171,7 +171,8 @@ class _PlacePageState extends State<PlacePage> {
             child: RaisedButton(
               onPressed: () {
                 addReservation(convertDateTime(_calendarController.selectedDay),
-                    _hour, _amountPeople);
+                    _hour, _amountPeople, 'Juan Martinez');
+                _showAlert(context);
               },
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20.0)),
@@ -235,4 +236,59 @@ List<String> amountPeople() {
 
 String convertDateTime(DateTime date) {
   return "${date.year.toString()}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}";
+}
+
+void _showAlert(BuildContext context) {
+  showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20.0))),
+          content: Container(
+            height: 250,
+            child: Column(
+              children: [
+                Image(
+                  image: AssetImage('images/confirmation.png'),
+                  width: 50,
+                  height: 50,
+                ),
+                Container(
+                    margin: EdgeInsets.all(15.0),
+                    child: headerText('¡Gracias por tu reserva, Juan!',
+                        Theme.of(context).primaryColor, FontWeight.bold, 20.0)),
+                Container(
+                  margin: EdgeInsets.all(10.0),
+                  child: Text(
+                    'En breve recibirás un correo en tu casilla de email con la información de tu reserva.',
+                    style: TextStyle(
+                        color: Theme.of(context).primaryColor,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 15.0),
+                  ),
+                ),
+                _doneButton(context)
+              ],
+            ),
+          ),
+        );
+      });
+}
+
+Widget _doneButton(BuildContext context) {
+  return Container(
+    margin: EdgeInsets.only(top: 4.0),
+    width: 150.0,
+    height: 35.0,
+    child: RaisedButton(
+      onPressed: () {
+        Navigator.pushNamed(context, '/tabs');
+      },
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
+      color: Theme.of(context).accentColor,
+      child: Text('Ok', style: TextStyle(color: Colors.white, fontSize: 17.0)),
+    ),
+  );
 }
