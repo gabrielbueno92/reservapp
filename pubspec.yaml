@@ -61,6 +61,7 @@ flutter:
      - images/reset_pass.png
      - lib/src/features/data/places.json
      - images/confirmation.png
+     - images/warning.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
